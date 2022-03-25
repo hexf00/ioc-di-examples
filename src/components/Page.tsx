@@ -1,11 +1,13 @@
 
-import { Entry } from '@/libs/Entry';
+import { Entry } from '@/demo-abstract';
 import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from './HelloWorld';
 
 @Component
 export default class Page extends Vue {
-  root = new Entry();
+  created () {
+    const entry = new Entry()
+  }
 
   render () {
     return <div>
